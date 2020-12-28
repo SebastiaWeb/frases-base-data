@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.main{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0px 0px 3px gray, 0px 0px 4px rgba(128, 128, 128, 0.575);
+    border-radius: 10px;
+    align-self: center;
+    padding: 20px;
+   background-color: rgba(199, 199, 199, 0.315);
+}
+
+/* TITULO */
+
+.main-title{
+    display: block;
+    height: 12.5%;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgb(61, 61, 61);
+    margin-bottom: 5%;
+}
+
+/* FORMULARIO */
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+}
+
+/* 790px x 144px */
+ 
+.main-container_frase, .main-container_autor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* LABEL */
+
+[for="autor"], [for="frase"]{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* INPUT */
+
+#main-input_autor, #main-input_frase{
+    text-align: center; 
+    background-color: transparent;
+    border: 2px solid #333;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    transition: ease-in-out 300ms;
+}
+
+#main-input_autor{
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+#main-input_frase{
+    resize: none;
+    height: 144px;
+}
+
+#main-input_frase:focus{
+    border: 2px solid rgb(117, 1, 69);
+}
+
+#main-input_autor:focus{
+    border-bottom: 2px solid rgb(117, 1, 69);
+}
+
+/* SUBMIT */
+
+#main-enviar{
+    width: 25%;
+    align-self: center;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all 500ms;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: black;
+    background-color: blueviolet;
+   
+}
+
+#main-enviar:hover{
+    box-shadow: 0px 0px 3px #333;
+    background-color: white;
+    color: blueviolet;
+   
+}
